@@ -4,14 +4,44 @@
     box-sizing: border-box;
 }
 
-a{
-text-decoration: none;
-}
-li
-{
-
-}
 ul,ol
 {
     list-style: none;
 }
+
+a
+{
+    text-decoration: none;
+    color: red;
+}
+
+.list_container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: antiquewhite;
+    padding: 10px 20px;
+}
+
+.locationinfo
+{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 80%;
+    margin: auto;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+.addressinfo{
+    display: flex;
+    gap: 20px;
+}
+
