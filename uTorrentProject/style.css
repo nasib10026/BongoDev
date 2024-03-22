@@ -32,7 +32,8 @@ list-style: none;
 }
 
 .mainSec {
-    background-color: #28293a; /* Set the background color to a light gray */
+    background-color: #28293a; 
+    margin-bottom: auto;/* Set the background color to a light gray */
   }
 
 
@@ -105,8 +106,57 @@ list-style: none;
     font-weight: bold;
   }
   
-  .product-desc {
+.product-desc 
+{
     color: white;
     font-weight: 200;
     font-size: 32px;
-  }
+}
+
+.scndSec{
+    width: 63%;
+    display: flex;
+    margin: 0px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.scndSec .product-desc
+{
+    color: black;
+}
+
+.scndSec .midSecP
+{
+    color: black;
+}
+
+.features
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 8px;
+margin-bottom: 40px;
+
+}
+
+.features .ftxt
+{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.features .fsubtxt{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.trdSec
+{
+    width: 68%;
+    margin: 0px auto 0px auto;
+}
