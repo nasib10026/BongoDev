@@ -1,0 +1,112 @@
+*
+{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+ul
+{
+list-style: none;
+}
+.navdiv{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    align-items: center;
+}
+.navitems
+{
+    display: flex;
+    gap:50px;
+    align-items: center;
+    font-weight: 500;
+
+}
+.navIcon img
+{
+    width: 120px;
+}
+
+.mainSec {
+    background-color: #28293a; /* Set the background color to a light gray */
+  }
+
+
+.mainSecImg img
+{
+    width: 300px;
+}
+
+.midSec
+{   
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.midSecText img
+{
+    width: 45px;
+
+}
+
+.midSecText 
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.midSecP
+{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.midFl
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.midFl p{
+    font-size: 30px;
+    align-items: center;
+}
+
+.download
+{
+    background-color:#75b73d;
+    border: none;
+    padding: 12px 45px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fcfcfc;
+}
+
+.product-name {
+    color: #72af3e;
+    font-weight: bold;
+  }
+  
+  .product-desc {
+    color: white;
+    font-weight: 200;
+    font-size: 32px;
+  }
