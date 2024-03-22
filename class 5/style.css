@@ -1,0 +1,21 @@
+.box
+{
+    
+    border: 1px solid red;
+    width: 300px;
+}
+
+.main
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+@media  screen and (max-width: 600px) {
+    .main
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
