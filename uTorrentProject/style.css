@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: "Inter";
 }
-ul
+.navdiv ul
 {
 list-style: none;
 }
@@ -17,6 +17,7 @@ list-style: none;
     margin: 0 auto;
     padding: 10px 0px;
     align-items: center;
+    width: 80%;
 }
 .navitems
 {
@@ -99,6 +100,7 @@ list-style: none;
     font-size: 13px;
     font-weight: 400;
     color: #fcfcfc;
+    margin-top: 5px;
 }
 
 .product-name {
@@ -148,6 +150,7 @@ margin-bottom: 40px;
 {
     font-weight: 700;
     font-size: 50px;
+    letter-spacing: 0.5px;
 }
 
 .features .fsubtxt{
@@ -157,6 +160,127 @@ margin-bottom: 40px;
 
 .trdSec
 {
-    width: 68%;
-    margin: 0px auto 0px auto;
+    width: 72%;
+    margin: 65px auto 65px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap:70px;
+    grid-row-gap: 50px;
 }
+
+@media  screen and (max-width: 600px) 
+{
+    .trdSec
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.trdSecBox
+{
+    display: flex;
+    gap: 15px;
+    align-items: start;
+}
+
+.trdSecText
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 5px;
+}
+
+.trdSecText .trdSecTextHead
+{
+    font-size: 16px;
+    font-weight: 650;
+}
+
+.trdSecTextHead p
+{
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.trdSecText .trdSecTextSub
+{
+    font-size: 13px;
+    font-weight: 350;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.trdSecTextSub p
+{
+    line-height: 1.7;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.trdSecIcon img
+{
+width: 25px;
+}
+
+.frthSec
+{
+    background-color: #eeeeee;
+    padding-bottom: 100px;
+}
+
+.frthSecFeature
+{
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+.frthSecMidImg
+{
+    width: 2000px;
+}
+
+.frthSecMid
+{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+}
+
+.frthSecMidtxt .midFl .product-descm
+{
+    color: black;
+}
+
+.frthSecHd
+{
+    padding-bottom: 20px;
+    
+}
+
+.frthSecMidTxt .mid p
+{
+    line-height: 1.6;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.mid .list
+{
+padding:10px 0px 0px 14px;
+line-height: 1.6;
+font-size: 14px;
+font-weight: 400;
+}
+
+.mid .image
+{
+    padding-top: 10px;
+}
+.mid .image img{
+    width: 130px;
+}
+
