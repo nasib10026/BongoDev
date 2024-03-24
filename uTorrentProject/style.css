@@ -6,18 +6,31 @@
     box-sizing: border-box;
     font-family: "Inter";
 }
+
+body{
+    padding-top: 60px;
+}
+
 .navdiv ul
 {
 list-style: none;
+}
+.navparent{
+    background-color: white;
+    position: relative;
 }
 .navdiv{
     display: flex;
     justify-content: space-between;
     width: 80%;
+    background-color: white;
+    top: 0;
     margin: 0 auto;
-    padding: 10px 0px;
+    padding: 10px 80px 10px 80px;
     align-items: center;
-    width: 80%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
 }
 .navitems
 {
@@ -283,4 +296,3 @@ font-weight: 400;
 .mid .image img{
     width: 130px;
 }
-

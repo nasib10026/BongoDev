@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent
+{
+    position: relative;
+}
+.child-one
+{
+    background-color: aqua;
+    /* position: relative;
+    top: 15px;
+    left: 20px; */
+    /* position: absolute;
+    top: 200px;
+    right: 100px; */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.child-two
+{
+    background-color: green;
+    /* position: absolute; */
+    position: sticky;
+    top: 0;
+}
+
+.child-three
+{
+    background-color: red;
+    position: sticky;
+    top: 0;
+
+}
+
+.child{
+    padding: 10px;
+}
+
+body{
+    padding-top: 100px;
+    padding-left: 80px;
+}
+
+.navbar
+{
+    background-color: black;
+    color: wheat;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.left-nav
+{
+    position: relative;
+}
+
+.navbar-left
+{
+    position: fixed;
+    background-color: black;
+    color: white;
+    top: 78px;
+    left: 0;
+    bottom: 0;
+    width: ;
+}
