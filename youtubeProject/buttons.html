@@ -9,18 +9,20 @@
         {
             background-color: rgb(210, 43, 43);
             border: none;
-            height: 36px;
-            width: 105px;
+            padding:10px 20px;
             border-radius: 2px;
             color: white;
             font-size: 15px;
             cursor: pointer;
-            transition: opacity .15s;
+            transition: opacity .15s,padding .2s;
+            vertical-align: top;
+            margin-right: 8px;
         }
 
         .subscribe-btn:hover
         {
             opacity: 0.8;
+            padding:15px 30px ;
         }
 
         .subscribe-btn:active
@@ -34,11 +36,12 @@
             border: 1px solid rgb(41,118,211);
             border-radius: 2px;
             color: rgb(41,118,211);
-            padding: 8px 10px;
             font-size: 15px;
+            padding: 9px 20px;
             font-weight: 530;
             cursor: pointer;
             transition: background-color .15s, color .15s;
+            vertical-align: top;
         }
         .join-btn:hover
         {
@@ -63,11 +66,19 @@
             cursor: pointer;
             margin-left: 8px;
             transition: box-shadow 0.15s;
+            vertical-align: top;
             
         }
        .tweet-btn:hover
        {
         box-shadow: 0px 7px 10px rgba(0,0,0,.15);
+       }
+
+       .tweet-btn:active
+       {
+        box-shadow: none;
+        margin-top: 4px;
+        margin-right: 4px;
        }
 
 
