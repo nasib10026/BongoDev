@@ -1,0 +1,54 @@
+.flexbox-container
+{
+display: flex;
+/* jayga na pele namaye debe */
+/* flex-wrap: wrap;  */
+/*horizontal align */
+/* justify-content:space-between; 
+
+/* justify-content: space-around; */
+background-color: aqua;
+/* align-items: flex-start;vertical align */
+/* align-items: flex-end; */
+/* align-items: center; */
+
+}
+
+.flexbox-item
+{
+    width: 200px;
+    margin: 10px;
+    border: 2px solid green
+}
+
+.flexbox-item1
+{
+    min-height: 100px;
+    /* tumi change hote parba na choto hobe na*/
+    /* flex-shrink: 0; */
+    order: 2;
+}
+
+.flexbox-item2
+{
+    min-height: 200px;
+    /* flex-grow: 2; */
+    /* equally space distribute korte 1gun 2gun exact .Grow ar basis eksathe kaj kore*/
+    /* flex-basis: 0; */
+    /* nije nije align hobe.invidual element er khetre*/
+    /* align-self: center; */
+    /* upor borabor chole ashbe */
+    /* align-self: flex-start; */
+    /* nich borabor er jonno */
+    /* align-self: flex-end; */
+    order: 3;
+}
+
+.flexbox-item3
+{
+    min-height: 300px;
+    /* screen barle tumi barba.item3 barbe */
+    /* flex-grow: 1; */
+    /* flex-basis: 0; */
+    order: 1;
+}
