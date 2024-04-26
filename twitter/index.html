@@ -16,7 +16,7 @@
         <div class="logo invert my-4 ml-[116px]">
           <img src="twitter-x.svg" class="w-7" alt="" />
         </div>
-        <div class="sidebar flex justify-end">
+        <div class="sidebar flex items-end flex-col ">
           <ul class="flex flex-col text-xl space-y-3 px-11">
             <li
               class="flex items-center gap-3 justify-start py-2 hover:bg-slate-800 px-4 hover:cursor-pointer w-fit hover:rounded-2xl"
@@ -77,20 +77,86 @@
             >
               <span class="material-symbols-outlined text-3xl"> more </span>More
             </li>
+            <li>
+              <div class="button w-full text-center my-4">
+                <button
+                  class="bg-[#1d9bf0] hover:bg-blue-500 px-24 py-3 rounded-full transition-colors duration-300 font-semibold text-lg text-center"
+                >
+                  Post
+                </button>
+              </div>
+            </li>
           </ul>
+         
         </div>
       </div>
-      <div class="second w-full border border-x-white border-y-black">bb</div>
+      <div class="second w-full border border-x-[#282b2e] border-y-black">
+        <div class="top flex p-3 relative">
+          <div
+            class="absolute w-[58px] h-1 rounded-full bg-[#1b8cd8] bottom-0 left-[18%] z-30"
+          ></div>
+          <div
+            class="left w-1/2 h-full  flex justify-center font-bold cursor-pointer hover:bg-slate-800 transition-colros duration-200"
+          >
+            For you
+          </div>
+          <div
+            class="left w-1/2 h-full flex justify-center font-bold cursor-pointer hover:bg-slate-800 transition-colors duration-200 text-[#6a6f73]"
+          >
+            Following
+          </div>
+          <div class="settings mx-2">
+            <span class="material-symbols-outlined"> settings </span>
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-[#282b2e]"></div>
+        <div class="whatsHappening flex gap-1 mx-3 my-3 justify-center">
+          <div class="image">
+            <img src="images/profile.jpeg" class="w-12 rounded-full" alt="" />
+          </div>
+          <input
+            type="text"
+            placeholder="What is happening?!"
+            class="w-full h-7 text-white text-lg pt-3 pb-1 ml-2 mr-5 outline-none bg-black"
+          />
+        </div>
+        <div class="flex items-center text-[#1a8fdd] ml-16 mb-4 gap-2 text-sm">
+          <span class="material-symbols-outlined"> globe_asia </span>
+          <span class="font-bold">Everyone can reply</span>
+        </div>
+        <hr class="mx-auto w-[80%] border-[#6a6f73]" />
+        <div class="w-[90%] flex my-3 justify-between">
+          <div
+            class="icons flex gap-2 text-[8px] ml-16 items-center text-[#1a8fdd] cursor-pointer"
+          >
+            <span class="material-symbols-outlined"> imagesmode </span>
+            <span class="material-symbols-outlined"> gif_box </span>
+            <span class="material-symbols-outlined"> ballot </span>
+            <span class="material-symbols-outlined"> sentiment_satisfied </span>
+            <span class="material-symbols-outlined"> pending_actions </span>
+            <span class="material-symbols-outlined text-[#114469]">
+              location_on
+            </span>
+          </div>
+          <div class="button">
+            <button
+              class="bg-[#1d9bf0] hover:bg-blue-500 px-5 py-2 rounded-full transition-colors duration-300 font-semibold text-sm"
+            >
+              Post
+            </button>
+          </div>
+        </div>
+      </div>
       <div class="third w-full bg-black">
         <div class="search m-4 w-3/4 pb-1">
           <input
             type="text"
-            class="bg-slate-800 rounded-full w-full text-white py-3 px-5"
+            class="bg-[#212327] rounded-full w-full text-white py-3 px-5"
             placeholder="Search"
           />
         </div>
         <div
-          class="premium m-4 bg-slate-800 w-3/4 px-4 pt-3 rounded-2xl border-[1px] border-gray-600"
+          class="premium m-4 bg-[#000000] w-3/4 px-4 pt-3 rounded-2xl border-[1px] border-[#282b2e]"
         >
           <h1 class="font-bold text-xl pb-2">Subscribe to Premium</h1>
           <h2 class="pb-3">
@@ -99,14 +165,14 @@
           </h2>
           <div class="btn pb-3">
             <button
-              class="bg-blue-400 hover:bg-blue-500 px-5 py-2 rounded-full transition-colors duration-300 font-semibold text-sm"
+              class="bg-[#1d9bf0] hover:bg-blue-500 px-5 py-2 rounded-full transition-colors duration-300 font-semibold text-sm"
             >
               Subscribe
             </button>
           </div>
         </div>
         <div
-          class="trend m-4 bg-slate-800 w-3/4 px-4 pt-3 rounded-2xl border-[1px] border-gray-600"
+          class="trend m-4 bg-[#000000] w-3/4 px-4 pt-3 rounded-2xl border-[1px] border-[#282b2e]"
         >
           <h1 class="font-bold text-xl pb-4">Trends for you</h1>
           <div class="items cursor-pointer">
@@ -153,55 +219,85 @@
           </div>
         </div>
         <div
-          class="follow m-4 bg-slate-800 w-3/4 px-4 pt-3 rounded-2xl border-[1px] border-gray-600"
+          class="follow m-4 bg-[#000000] w-3/4 px-4 pt-3 rounded-2xl border-[1px] border-[#282b2e]"
         >
           <div class="headline">
             <h1 class="font-bold text-xl pb-4">Who to follow</h1>
           </div>
 
-          <div class="items flex justify-between items-center cursor-pointer pb-2">
+          <div
+            class="items flex justify-between items-center cursor-pointer pb-2"
+          >
             <div class="left flex space-x-[9px] items-center">
               <div class="1st">
-                <img src="images/playstation-logo.jpeg" class="h-10 w-10 rounded-sm">
+                <img
+                  src="images/playstation-logo.jpeg"
+                  class="h-10 w-10 rounded-sm"
+                />
               </div>
               <div class="2nd">
-                <h1 class="font-bold hover:underline transition duration-200">Playstation</h1>
+                <h1 class="font-bold hover:underline transition duration-200">
+                  Playstation
+                </h1>
                 <h1 class="text-slate-400">@Playstation</h1>
               </div>
             </div>
             <div class="right">
-              <button class="bg-white text-sm text-black font-semibold
-              px-4 py-[10px] rounded-full hover:bg-slate-200 transition-colors duration-200">Follow</button>
+              <button
+                class="bg-white text-sm text-black font-semibold px-4 py-[10px] rounded-full hover:bg-slate-200 transition-colors duration-200"
+              >
+                Follow
+              </button>
             </div>
           </div>
-          <div class="items flex justify-between items-center cursor-pointer pb-2">
+          <div
+            class="items flex justify-between items-center cursor-pointer pb-2"
+          >
             <div class="left flex space-x-[9px] items-center">
               <div class="1st">
-                <img src="images/playstation-logo.jpeg" class="h-10 w-10 rounded-sm">
+                <img
+                  src="images/playstation-logo.jpeg"
+                  class="h-10 w-10 rounded-sm"
+                />
               </div>
               <div class="2nd">
-                <h1 class="font-bold hover:underline transition duration-200">Playstation</h1>
+                <h1 class="font-bold hover:underline transition duration-200">
+                  Playstation
+                </h1>
                 <h1 class="text-slate-400">@Playstation</h1>
               </div>
             </div>
             <div class="right">
-              <button class="bg-white text-sm text-black font-semibold
-              px-4 py-[10px] rounded-full hover:bg-slate-200 transition-colors duration-200">Follow</button>
+              <button
+                class="bg-white text-sm text-black font-semibold px-4 py-[10px] rounded-full hover:bg-slate-200 transition-colors duration-200"
+              >
+                Follow
+              </button>
             </div>
           </div>
-          <div class="items flex justify-between items-center cursor-pointer pb-2">
+          <div
+            class="items flex justify-between items-center cursor-pointer pb-2"
+          >
             <div class="left flex space-x-[9px] items-center">
               <div class="1st">
-                <img src="images/playstation-logo.jpeg" class="h-10 w-10 rounded-sm">
+                <img
+                  src="images/playstation-logo.jpeg"
+                  class="h-10 w-10 rounded-sm"
+                />
               </div>
               <div class="2nd">
-                <h1 class="font-bold hover:underline transition duration-200">Playstation</h1>
+                <h1 class="font-bold hover:underline transition duration-200">
+                  Playstation
+                </h1>
                 <h1 class="text-slate-400">@Playstation</h1>
               </div>
             </div>
             <div class="right">
-              <button class="bg-white text-sm text-black font-semibold
-              px-4 py-[10px] rounded-full hover:bg-slate-200 transition-colors duration-200">Follow</button>
+              <button
+                class="bg-white text-sm text-black font-semibold px-4 py-[10px] rounded-full hover:bg-slate-200 transition-colors duration-200"
+              >
+                Follow
+              </button>
             </div>
           </div>
           <div class="show cursor-pointer">
