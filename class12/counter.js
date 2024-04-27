@@ -1,9 +1,14 @@
 let count = 0;
-const incrementBtn = document.getElementById("increment");
-const decrementBtn = document.getElementById("decrement");
-const displayElement = document.getElementById("counter");
+function idGetter(text)
+{
+  return document.getElementById(text);
+}
+const incrementBtn = idGetter("increment");
+const decrementBtn = idGetter("decrement");
+const displayElement = idGetter("counter");
 incrementBtn.addEventListener('click',incrementCount);
 decrementBtn.addEventListener('click',decrementCount);
+
 function incrementCount()
 {
   console.log("Clicked");
