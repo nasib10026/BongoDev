@@ -6,6 +6,7 @@ incrementBtn.addEventListener('click',incrementCount);
 decrementBtn.addEventListener('click',decrementCount);
 function incrementCount()
 {
+  console.log("Clicked");
   count += 1;
   if(count > 10)
   {
@@ -15,7 +16,8 @@ function incrementCount()
 }
 
 function decrementCount()
-{
+{   
+    console.log("Clicked");
     count -=1;
     if(count < 0)
     {
