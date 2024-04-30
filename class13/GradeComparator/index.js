@@ -1,6 +1,6 @@
 const inp1 = document.getElementById("number1");
 const output = document.getElementById("result");
-const btn = document.getElementById("compare")
+const btn = document.getElementById("calculate")
 
 function compare() {
     const num1 = inp1.value;
