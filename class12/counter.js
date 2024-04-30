@@ -16,6 +16,7 @@ function incrementCount()
   if(count > 10)
   {
     count = 10;
+    window.alert(`You can't go beyond 10`)
   }
   displayElement.innerText = count;
 }
@@ -27,6 +28,7 @@ function decrementCount()
     if(count < 0)
     {
         count = 0;
+        window.alert(`You can't go below 0`);
     }
     displayElement.innerText = count;
 

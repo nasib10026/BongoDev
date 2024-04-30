@@ -7,8 +7,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="">
-    
-   <script src="random.js"></script>
+  <body class="bg-gray-300 mx-5 my-2">
+    <h1 class="font-bold text-3xl text-purple-800 pb-4">Random Password Generator</h1>
+    <div class="flex space-x-2 items-center mb-3">
+      <h2 class="text-xl font-semibold">Enter the length of the password:</h2>
+      <input id="input" type="number" min="8" max="25" value="8" class="px-1 py-1 rounded-sm w-[100px] text-center"/>
+    </div>
+    <h1>Select the attributes you would want to add to the password</h1>
+    <div class="flex space-x-2 items-center">
+      <input type="checkbox" id="lowercase" />
+      <label for="lowercase">Lowercase</label>
+      <input type="checkbox" id="uppercase" />
+      <label for="lowercase">Uppercase</label>
+      <input type="checkbox" id="numbers" />
+      <label for="lowercase">Numbers</label>
+      <input type="checkbox" id="symbols" />
+      <label for="lowercase">Symbols</label>
+    </div>
+    <button id="btn" type="button" onclick="generate()" class=" ml-[125px] mt-4 bg-purple-800 px-4 py-2 rounded-lg my-3 text-purple-200 hover:bg-purple-200 hover:text-purple-800 duration-300">
+      Generate
+    </button>
+    <p id="p1" class="font-semibold text-2xl text-purple-600 mt-4"></p>
+
+    <script src="random.js"></script>
   </body>
 </html>
