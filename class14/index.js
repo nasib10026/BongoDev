@@ -4,8 +4,8 @@ const reset = document.getElementById('reset');
 btn.addEventListener('click', function () {
     const colno = document.getElementById('colno');
     let k = 1; 
-    const x = Math.ceil((10 / colno.value));
-    for (let i = 1; i <= x; i++) {
+    // const x = Math.ceil((10 / colno.value));
+    for (let i = 1; i <= 10; i++) {
         document.getElementById(`table-container${i}`).innerHTML = '';
     }
     for (let i = 1; i <= 10; i++) {
@@ -23,9 +23,9 @@ btn.addEventListener('click', function () {
 });
 
 reset.addEventListener('click', function () {
-    const colno = document.getElementById('colno');
-    const x = Math.ceil((10 / colno.value));
-    for (let i = 1; i <= x; i++) {
+    //const colno = document.getElementById('colno');
+    // const x = Math.ceil((10 / colno.value));
+    for (let i = 1; i <= 10; i++) {
         document.getElementById(`table-container${i}`).innerHTML = '';
     }
 });
