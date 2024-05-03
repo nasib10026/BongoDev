@@ -7,19 +7,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="bg-gray-100 h-screen flex items-center justify-center">
-    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-      <h1 class="text-2xl font-bold mb-4 text-blue-500">Mulitplication Table</h1>
-      <!-- Input Fields for Numbers -->
-      <!-- <div class="flex flex-col gap-4">
-        <input type="number"  id="number" value="1"  placeholder="Enter your number" class="border p-2 rounded text-center" />
-      </div> -->
-      <!-- Button to Compare Numbers -->
-      <button id="submit" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Generate</button>
-      <!-- Display Result -->
-      <div id="table-container" class="mt-4 text-xl"></div>
+  <body >
+    <div class="mt-6">
+      <!-- Add mt-16 class here -->
+      <h1 class="text-2xl font-bold mb-4 text-blue-500 text-center">
+        Multiplication Table
+      </h1>
+      <div class="flex justify-center space-x-4">
+      <button id="submit" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">
+        Generate
+      </button>
+      <button id="reset" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">
+        Reset
+      </button>
     </div>
-   
+    
+      <!-- Display Result -->
+      <div class="flex space-x-2 justify-center">
+      <div id="table-container1" class="mt-4 text-xl mr-[100px]"></div>
+      <div id="table-container2" class="mt-4 text-xl mx-[100px]"></div>
+      </div>
+    </div>
+
     <!-- Include JavaScript -->
     <script src="index.js"></script>
   </body>
