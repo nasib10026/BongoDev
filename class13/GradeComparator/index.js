@@ -4,6 +4,11 @@ const btn = document.getElementById("calculate")
 
 function compare() {
     const num1 = inp1.value;
+    if(num1=='')
+    {
+        output.innerText = `You should enter your marks`;
+        return;
+    }
     if (num1 > 100 || num1 < 0) {
         output.innerText = `Invalid Number`;
     }
