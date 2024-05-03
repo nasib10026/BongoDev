@@ -5,14 +5,17 @@
     <title>Number Comparator App</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-
+  </headlg
   <body >
     <div class="mt-6">
       <!-- Add mt-16 class here -->
       <h1 class="text-2xl font-bold mb-4 text-blue-500 text-center">
         Multiplication Table
       </h1>
+      <div class="query flex space-x-3 mt-3 justify-center">
+        <p class="text-xl font-bold">How many timeTables do you want to see in a column?</p>
+        <input type="number" min="1" name="" class="w-[50px] border-2 rounded-sm text-center" id="colno">
+    </div>
       <div class="flex justify-center space-x-4">
       <button id="submit" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">
         Generate
@@ -21,16 +24,23 @@
         Reset
       </button>
     </div>
+
+  
     
       <!-- Display Result -->
-      <div class="flex justify-between mx-[300px] my-10">
-      <div id="table-container1" class="mt-4 text-xl"></div>
-      <div id="table-container2" class="mt-4 text-xl"></div>
-      <div id="table-container3" class="mt-4 text-xl"></div>
-      <div id="table-container4" class="mt-4 text-xl"></div>
-      <div id="table-container5" class="mt-4 text-xl"></div>
-
-      </div>
+      
+      <div class="flex justify-center space-x-8">
+      <div id="table-container1" class="mt-4 text-lg"></div>
+      <div id="table-container2" class="mt-4 text-lg"></div>
+      <div id="table-container3" class="mt-4 text-lg"></div>
+      <div id="table-container4" class="mt-4 text-lg"></div>
+      <div id="table-container5" class="mt-4 text-lg"></div>
+      <div id="table-container6" class="mt-4 text-lg"></div>
+      <div id="table-container7" class="mt-4 text-lg"></div>
+      <div id="table-container8" class="mt-4 text-lg"></div>
+      <div id="table-container9" class="mt-4 text-lg"></div>
+      <div id="table-container10" class="mt-4 text-lg"></div>
+    </div>
     </div>
 
     <!-- Include JavaScript -->

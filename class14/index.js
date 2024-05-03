@@ -1,9 +1,11 @@
-//const numberInput = document.getElementById('number');
 const btn = document.getElementById('submit');
 const reset = document.getElementById('reset');
-let k = 1;
+
 btn.addEventListener('click', function () {
-    for (let i = 1; i <= 5; i++) {
+    const colno = document.getElementById('colno');
+    let k = 1; 
+    const x = Math.ceil((10 / colno.value));
+    for (let i = 1; i <= x; i++) {
         document.getElementById(`table-container${i}`).innerHTML = '';
     }
     for (let i = 1; i <= 10; i++) {
@@ -11,22 +13,19 @@ btn.addEventListener('click', function () {
             const tableRow = document.createElement('h4');
             tableRow.innerText = `${i} X ${j} = ${i*j}`;
             document.getElementById(`table-container${k}`).appendChild(tableRow);
-
         }
         const lineBreak = document.createElement('br');
         document.getElementById(`table-container${k}`).appendChild(lineBreak);
-        if (i % 2 == 0) {
+        if (i % colno.value == 0) {
             k++;
         }
-        if (k == 6) {
-            return;
-        }
     }
-
-})
+});
 
 reset.addEventListener('click', function () {
-    for (let i = 1; i <= 5; i++) {
+    const colno = document.getElementById('colno');
+    const x = Math.ceil((10 / colno.value));
+    for (let i = 1; i <= x; i++) {
         document.getElementById(`table-container${i}`).innerHTML = '';
     }
-})
+});
