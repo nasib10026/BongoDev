@@ -13,6 +13,11 @@
         Multiplication Table
       </h1>
       <div class="query flex space-x-3 mt-3 justify-center">
+        <p class="text-xl font-bold"> Enter the range:</p>
+        <input type="number" min="1"  value="1" name="" class="w-[50px] border-2 rounded-sm text-center" id="range1">
+        <input type="number" min="1"  value="10" name="" class="w-[50px] border-2 rounded-sm text-center" id="range2">
+    </div>
+      <div class="query flex space-x-3 mt-3 justify-center">
         <p class="text-xl font-bold">How many timeTables do you want to see in a column?</p>
         <input type="number" min="1" max="10" value="2" name="" class="w-[50px] border-2 rounded-sm text-center" id="colno">
     </div>
@@ -25,23 +30,16 @@
       </button>
     </div>
     
-    <p class="font-semibold text-center mt-4 text-red-500">Make sure to press reset button everytime before you enter new number</p>
+    <p class="font-semibold text-center mt-4 text-red-500">
+      Here is your multiplication table chart
+    </p>
 
   
     
       <!-- Display Result -->
       
-      <div class="flex justify-center space-x-8">
-      <div id="table-container1" class="mt-4 text-lg"></div>
-      <div id="table-container2" class="mt-4 text-lg"></div>
-      <div id="table-container3" class="mt-4 text-lg"></div>
-      <div id="table-container4" class="mt-4 text-lg"></div>
-      <div id="table-container5" class="mt-4 text-lg"></div>
-      <div id="table-container6" class="mt-4 text-lg"></div>
-      <div id="table-container7" class="mt-4 text-lg"></div>
-      <div id="table-container8" class="mt-4 text-lg"></div>
-      <div id="table-container9" class="mt-4 text-lg"></div>
-      <div id="table-container10" class="mt-4 text-lg"></div>
+    <div class="flex  justify-center space-x-8" id="display-result">
+
     </div>
     </div>
 

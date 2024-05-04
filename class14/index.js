@@ -1,17 +1,26 @@
 const btn = document.getElementById('submit');
 const reset = document.getElementById('reset');
+const displayResult = document.getElementById('display-result');
+
 
 btn.addEventListener('click', function () {
     const colno = document.getElementById('colno');
-    let k = 1; 
-    // const x = Math.ceil((10 / colno.value));
-    for (let i = 1; i <= 10; i++) {
-        document.getElementById(`table-container${i}`).innerHTML = '';
+    displayResult.innerHTML = '';
+    const range1 = document.getElementById('range1').value;
+    const range2 = document.getElementById('range2').value;
+
+    for (let i = range1; i <= range2; i++) {
+        const tableContainer = document.createElement('div');
+        tableContainer.id = `table-container${i}`;
+        tableContainer.className = 'mt-4 text-lg';
+        displayResult.appendChild(tableContainer);
     }
-    for (let i = 1; i <= 10; i++) {
+
+    let k = 1;
+    for (let i = range1; i <= range2; i++) {
         for (let j = 1; j <= 10; j++) {
             const tableRow = document.createElement('h4');
-            tableRow.innerText = `${i} X ${j} = ${i*j}`;
+            tableRow.innerText = `${i} X ${j} = ${i * j}`;
             document.getElementById(`table-container${k}`).appendChild(tableRow);
         }
         const lineBreak = document.createElement('br');
@@ -23,9 +32,9 @@ btn.addEventListener('click', function () {
 });
 
 reset.addEventListener('click', function () {
-    //const colno = document.getElementById('colno');
-    // const x = Math.ceil((10 / colno.value));
-    for (let i = 1; i <= 10; i++) {
+    const range1 = document.getElementById('range1').value;
+    const range2 = document.getElementById('range2').value;
+    for (let i = range1; i <= range2; i++) {
         document.getElementById(`table-container${i}`).innerHTML = '';
     }
 });
