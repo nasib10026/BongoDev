@@ -2,6 +2,7 @@ const btn = document.getElementById('submit');
 const reset = document.getElementById('reset');
 const displayResult = document.getElementById('display-result');
 const resultHeadline = document.getElementById('resultHeadline');
+displayResult.className = 'flex justify-center space-x-4'
 
 
 btn.addEventListener('click', function () {
@@ -22,6 +23,7 @@ btn.addEventListener('click', function () {
     for (let i = range1; i <= range2; i++) {
         for (let j = 1; j <= 10; j++) {
             const tableRow = document.createElement('h4');
+            tableRow.className = 'font-semibold text-yellow-900';
             tableRow.innerText = `${i} X ${j} = ${i * j}`;
             document.getElementById(`table-container${k}`).appendChild(tableRow);
         }

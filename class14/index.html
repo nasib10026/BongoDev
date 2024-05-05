@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Timetable with rows</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-  </headlg
-  <body >
-    <div class="mt-6">
-      <!-- Add mt-16 class here -->
-      <h1 class="text-2xl font-bold mb-4 text-blue-500 text-center">
-        Multiplication Table
-      </h1>
-      <div class="query flex space-x-3 mt-3 justify-center">
-        <p class="text-xl font-bold"> Enter the range:</p>
-        <input type="number" min="1"  value="1" name="" class="w-[50px] border-2 rounded-sm text-center" id="range1">
-        <input type="number" min="1"  value="10" name="" class="w-[50px] border-2 rounded-sm text-center" id="range2">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Timetable with rows</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  </headlg <body>
+  <div class="mt-6">
+    <!-- Add mt-16 class here -->
+    <h1 class="text-2xl font-bold mb-4 text-blue-500 text-center">
+      Multiplication Table
+    </h1>
+    <div class="query flex space-x-3 mt-3 justify-center">
+      <p class="text-xl font-bold"> Enter the range:</p>
+      <input type="number" min="1" value="1" name="" class="w-[50px] border-2 rounded-sm text-center" id="range1">
+      <input type="number" min="1" value="10" name="" class="w-[50px] border-2 rounded-sm text-center" id="range2">
     </div>
-      <div class="query flex space-x-3 mt-3 justify-center">
-        <p class="text-xl font-bold">How many rows do you want?</p>
-        <input type="number" min="1" max="10" value="2" name="" class="w-[50px] border-2 rounded-sm text-center" id="colno">
+    <div class="query flex space-x-3 mt-3 justify-center">
+      <p class="text-xl font-bold">How many rows do you want?</p>
+      <input type="number" min="1" max="10" value="2" name="" class="w-[50px] border-2 rounded-sm text-center"
+        id="colno">
     </div>
-      <div class="flex justify-center space-x-4">
+    <div class="flex justify-center space-x-4">
       <button id="submit" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">
         Generate
       </button>
@@ -29,21 +30,25 @@
         Reset
       </button>
     </div>
-    
+
     <p class="font-semibold text-center mt-4 text-red-500" id="resultHeadline">
-      
+
     </p>
 
-  
-    
-      <!-- Display Result -->
-      
-    <div class="flex  justify-center space-x-8" id="display-result">
 
-    </div>
-    </div>
 
-    <!-- Include JavaScript -->
-    <script src="index.js"></script>
+    <!-- Display Result -->
+    <div class="flex justify-center">
+
+
+      <div id="display-result">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Include JavaScript -->
+  <script src="index.js"></script>
   </body>
+
 </html>

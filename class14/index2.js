@@ -11,9 +11,11 @@ btn.addEventListener('click', function () {
     const range2 = parseInt(document.getElementById('range2').value);
     const columns = colno.value; 
 
-    displayResult.style.display = 'grid';
-    displayResult.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
-    displayResult.style.gap = '50px'; 
+    // displayResult.style.display = 'grid';
+    // displayResult.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+    // displayResult.style.gap = '25px';
+    
+    displayResult.className = `grid grid-cols-${columns} gap-[5px]`;
 
     for (let i = range1; i <= range2; i++) {
         const tableContainer = document.createElement('div');
@@ -21,6 +23,7 @@ btn.addEventListener('click', function () {
 
         for (let j = 1; j <= 10; j++) {
             const tableRow = document.createElement('h4');
+            tableRow.className='text-purple-500 text-lg font-semibold';
             tableRow.innerText = `${i} X ${j} = ${i * j}`;
             tableContainer.appendChild(tableRow);
         }
@@ -32,7 +35,5 @@ btn.addEventListener('click', function () {
 reset.addEventListener('click', function () {
     resultHeadline.innerText = '';
     displayResult.innerHTML = '';
-    displayResult.style.display = '';
-    displayResult.style.gridTemplateColumns = ''; 
-    displayResult.style.gap = ''; 
+    displayResult.className = '';
 });
