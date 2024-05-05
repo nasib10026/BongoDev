@@ -15,7 +15,7 @@ btn.addEventListener('click', function () {
     // displayResult.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
     // displayResult.style.gap = '25px';
     
-    displayResult.className = `grid grid-cols-${columns} gap-[5px]`;
+    displayResult.className = `grid grid-cols-${columns} gap-[10px]`;
 
     for (let i = range1; i <= range2; i++) {
         const tableContainer = document.createElement('div');
