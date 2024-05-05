@@ -8,9 +8,8 @@ const tableContainer = document.getElementById("table-container");
 // textElement.innerText = 'Hello world'
 // tableContainer.appendChild(textElement)
 
-generateBtn.addEventListener('click',function () {
-    const number = parseInt(numberInput.value)
-    tableContainer.innerHTML = '';
+function createTable(number)
+{
     const table = document.createElement('table');
     table.className = 'w-full border-collapse text-center'
     for (let i = 1; i <= 10; i++) {
@@ -27,7 +26,15 @@ generateBtn.addEventListener('click',function () {
         tableRow.appendChild(right_cell);
         table.appendChild(tableRow);
     }
+    return table;
+}
+
+generateBtn.addEventListener('click',function () {
+    const number = 5;
+    tableContainer.innerHTML = '';
+    const table = createTable(number);
     tableContainer.appendChild(table);
+    
 });
 
 // function generateMultiplier() {
