@@ -1,5 +1,5 @@
 const generateBtn = document.getElementById("generate");
-const tableContainer = document.getElementById("table-container");
+
 
 function createTable(number) {
     const table = document.createElement('table');
@@ -22,17 +22,19 @@ function createTable(number) {
 }
 
 generateBtn.addEventListener('click', function () {
-    const topRow = document.getElementById("topRow");
-    const bottomRow = document.getElementById("bottomRow");
-    topRow.innerHTML = '';
-    bottomRow.innerHTML = '';
+    const tableContainer = document.getElementById("table-container");
+    const columns = document.getElementById("columns").value;
+    tableContainer.className = `grid grid-cols-${columns} gap-5`;
+    tableContainer.innerHTML = '';
+    const range1 = document.getElementById('range1').value;
+    const range2 = document.getElementById('range2').value;
+    const r1 = Math.min(range1,range2);
+    const r2 = Math.max(range1,range2);
 
-    for (let number = 1; number <= 10; number++) {
+
+    for (let number = r1; number <= r2; number++) {
         const table = createTable(number);
-        if (number <= 5) {
-            topRow.appendChild(table);
-        } else {
-            bottomRow.appendChild(table);
-        }
+        tableContainer.appendChild(table);
+        
     }
 });

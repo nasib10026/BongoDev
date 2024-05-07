@@ -13,17 +13,24 @@
 <body class="bg-gray-100">
   <div class="bg-white p-6 rounded-lg shadow-lg text-center">
     <h1 class="text-2xl font-bold mb-4">Multiplication Table Generator</h1>
-
+    <div class="flex space-x-2 justify-center items-center">
+    <h1 class="text=-2xl font-semibold my-2">Enter the range</h1>
     <!-- Input field for the number -->
     <!-- <input type="number" id="input-number" placeholder="Enter a number" class="border p-2 rounded w-full text-center" value="1" /> -->
+     <input type="number" id = "range1" min="1" class="border px-2 rounded w-[50px]">
+     <input type="number" id = "range2" min="1" class="border px-2 rounded w-[50px]">
+    </div>
+
+    <div class="my-5 flex justify-center">
+      <h1 class="text=-2xl font-semibold my-2">How many columns do you want to keep?</h1>
+      <input type="number" id = "columns" min="1" class="border px-2 rounded w-[50px]">   
+    </div>
 
     <!-- Button to generate the multiplication table -->
-    <button id="generate" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Generate Table</button>
+    <button id="generate" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded mb-[20px]">Generate Table</button>
 
     <!-- Display area for the multiplication table -->
-    <div id="table-container" class="flex flex-col gap-4 py-2">
-        <div id="topRow" class="flex flex-row gap-5 py-2"></div>
-        <div id="bottomRow" class="flex flex-row gap-5 py-2"></div>
+    <div id="table-container" class="grid grid-cols-5">
     </div>
   </div>
 
