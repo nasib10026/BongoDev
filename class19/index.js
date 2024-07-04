@@ -44,14 +44,7 @@
    productImage.classList.add('w-full', 'mb-4');
    return productImage;
  }
- // function isProductExistInCart(productId)
- // {
- //    const productIndex = cart.findIndex(function(product){
- //      return product.id  === productId ? true : false;
- //    });
- //    return productIndex === -1 ? false : true;
 
- // }
 
  function getProductNameElement(productName) {
    const productNameElement = document.createElement('h3');
@@ -66,7 +59,13 @@
    productPriceElement.classList.add('text-lg', 'font-semibold');
    return productPriceElement;
  }
-
+ // function isProductExistInCart(productId)
+ // {
+ //    const productIndex = cart.findIndex(function(product){
+ //      return product.id  === productId ? true : false;
+ //    });
+ //    return productIndex === -1 ? false : true;
+ // }
  //const isProductExistInCart = (productId) => cart.findIndex((product) => product.id === productId) !== -1;
  function getAddToCartButton(product) {
    const addToCartButton = document.createElement('button');
