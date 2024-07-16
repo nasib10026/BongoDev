@@ -1,6 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Counter from "./Counter";
+
+//component e state poriborton hole rerender hoy.setter function diye state update kora lage.state er value sathe sathe update hoy na.je muhurte update hoy asynchronously hoy.parent component rerender hole childreno rerender hobe.rerender sheshe dekhe useEffect hook ase kina.UseEffect hook thakle er dependency list e kono state ase kina.hook ashole function ekta.List na dile component rerender hole protibar useEffect er bhitor ashbe.
 
 function App() {
   //state change korte hole
@@ -25,17 +28,31 @@ function App() {
   const resetCount = () =>
     {
       setCount(0)
-    }
+    };
+    useEffect(()=>{
+      console.log("useEffect 1 is executing....");
+    },[count]);
+
+    //state change hole rerender hoy.state change hole jotogula useEffect ase shob dekhe.je state change hoise sheta jar dependency list e thake shei functionta execute kore.
+
+   
+    useEffect(()=>{
+      console.log("useEffect 2 is executing....");
+      //send loadcount to backend.prottek render e useEffect ta fire hobe.
+    },[]);
+    //faka list pathale prothombar component ta jokhon load hobe tokhon fire hobe shudhu.rendering age hobe then effect fire hobe.component load hobe then bolbo data lagbe data den.(server er kase chabo).
+
+
+ //eta prothombar load howa mount howa bole.state poriborton e rerender hoy.rerender hole khoje component e useEffect ase kina?list ase kina?faka thakle first bar render korbe just.list e state thakle.list er bhitor kisu change hole oy functionta execute hobe.etake component er lifecycle bole.mount howa theke unmount howa porjonto.
   return (
-    <div className="App">
-      <div>Count is: {count}</div>
-      <div className="buttons">
-      <button onClick={increaseCount}>+</button>
-      <button onClick={resetCount}>reset</button>
-      <button onClick={decreaseCount}>-</button>
+    
+      <div className="App">
+        <h1>Multiple Counters</h1>
+        <Counter initialCount={0} />
+        <Counter initialCount={10} />
+        <Counter initialCount={20} />
       </div>
-      
-    </div>
+    
   );
 }
 

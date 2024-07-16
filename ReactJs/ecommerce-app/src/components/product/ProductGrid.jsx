@@ -18,5 +18,5 @@ export const ProductGrid = () => {
       />
     ));
   };
-  return <div className="productGrid">{renderProducts()}</div>;
+  return <div className="grid grid-cols-2 gap-2">{renderProducts()}</div>;
 };
