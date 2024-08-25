@@ -1,5 +1,9 @@
 commands:
+ npm init -y
+ npm i express --save
  npm i nodemon //automatic run korabe
+ npm i nodemon --save-dev
+ npm i body-parser --save
 
 class 2:
  -First request
